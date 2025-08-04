@@ -15,9 +15,11 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
+      
       style: ElevatedButton.styleFrom(
+        foregroundColor: Colors.white,
         padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 24),
-        backgroundColor: Colors.green,
+        backgroundColor: const Color.fromARGB(255, 233, 115, 178),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ), 
       onPressed: isLoading ? null : onPressed, 

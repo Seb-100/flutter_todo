@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/views/auth/register_page.dart';
+import 'package:todo_app/20mins.dart';
+// import 'package:todo_app/views/auth/register_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
        
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const RegisterPage(),
+      home: const MoodTrackerPage(),
     );
   }
 }
